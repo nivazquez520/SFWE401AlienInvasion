@@ -23,5 +23,4 @@ Example Exploits:
 - TBD
 
 Security Enhancements:
--TBD
-
+- TBD
