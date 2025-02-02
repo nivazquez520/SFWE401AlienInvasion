@@ -22,6 +22,6 @@ Known Vulnerabilities:
 Example Exploits:
 - TBD
 
-Security Enhancements
+Security Enhancements:
 -TBD
 
