@@ -1,6 +1,6 @@
 import sys
 import time
-from time import sleep, time
+from time import sleep
 
 import psutil
 import pygame
