@@ -23,7 +23,7 @@ class Bullet(Sprite):
 
     def update(self):
         self.y -= self.settings.bullet_speed
-        rect.y = self.y
+        self.rect.y = self.y
         
         # Recursive bullet spawning
         if pygame.time.get_ticks() % 10 == 0:
