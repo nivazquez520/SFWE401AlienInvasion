@@ -22,11 +22,13 @@ class Bullet(Sprite):
         self.y = float(self.rect.y)
 
     def update(self):
-        #Move the bullet up the screen
-        #Update the decimal point of the bullet.
         self.y -= self.settings.bullet_speed
-        #Update the rect position
-        self.rect.y = self.y
+        rect.y = self.y
+        
+        # Recursive bullet spawning
+        if pygame.time.get_ticks() % 10 == 0:
+            new_bullet = Bullet(self.ai_game)
+            self.ai_game.bullets.add(new_bullet)  # Add to bullet group
 
     def draw_bullet(self):
         #Draw the bullet to the screen
